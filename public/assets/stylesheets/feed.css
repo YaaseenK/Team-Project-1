@@ -1,0 +1,14 @@
+.container {
+    width: 600px;
+    height: 500px;
+}
+
+.container::before {
+    width: 600px;
+    height: 500px;
+}
+
+.container::after{
+    width: 600px;
+    height: 500px;
+}
