@@ -123,8 +123,8 @@ body{
     z-index: 9;
 }
 
-.inputBox input:valid ~ i,
+/* .inputBox input:valid ~ i,
 .inputBox input:focus ~ i{
     height: 44px;
-}
+} */
 /* ADDING SPACING TO THE TAGS */
