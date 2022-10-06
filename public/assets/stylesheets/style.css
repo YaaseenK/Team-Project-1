@@ -38,6 +38,7 @@ body{
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
 }
+
 .container::after{
     content: '';
     position: absolute;
@@ -86,13 +87,13 @@ body{
     font-size: 16px;
     position: relative;
     width: 100%;
-    padding: 20px 10px 10px;
+    padding: 20px 2px 10px;
     background: transparent;
     border: none;
     outline: none;
-    color: #fff;
+    color: #23242a;
     letter-spacing: 0.05em;
-
+    z-index: 10;
 }
 .inputBox span{
     position: absolute;
@@ -106,8 +107,8 @@ body{
 }
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span{
-    color: #45f3ff;
-    transform: translateY(-34px);
+    color: #2b959c;
+    transform: translateX(0) translateY(-34px);
     font-size: 0.75em;
 }
 .inputBox i {
@@ -123,8 +124,40 @@ body{
     z-index: 9;
 }
 
-/* .inputBox input:valid ~ i,
+.inputBox input:valid ~ i,
 .inputBox input:focus ~ i{
     height: 44px;
-} */
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    margin: 10px 0;
+    font-size: 1.25em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.links a:hover,
+.links a:nth-child(2) {
+    color: #45f3ff;
+}
+
+input[type="submit"]{
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+input[type="submit"]{
+    opacity: 0.8;
+}
 /* ADDING SPACING TO THE TAGS */
