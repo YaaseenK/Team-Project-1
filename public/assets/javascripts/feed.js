@@ -68,9 +68,3 @@ function clickCatThree() {
     tiktokImageUrl = 'https://www.rd.com/wp-content/uploads/2021/01/175BadJokes-19.jpg?fit=700,700';
     getImageFromTTAndShow();
 }
-
-
-
-/**
- * [{"initial":"Nandroid","score":11},{"initial":"Mayank","score":1}]
- */
