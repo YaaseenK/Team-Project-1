@@ -12,7 +12,6 @@ body .container {
     position: relative;
 }
 
-
 #outerBox{
     position: relative;
     width: 580px;
@@ -54,8 +53,6 @@ body .container {
     transform-origin: bottom right;
     animation-delay: -3s;
 }
-
-
 
 #innerBox {
     position: absolute;
