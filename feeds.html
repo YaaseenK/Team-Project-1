@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        MEME GOD
+    </title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./public/assets/stylesheets/feeds.css" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div style="display: none;" id="popupDialog">
+                <div style="
+            display: flex;
+            justify-content: center;
+            align-items: center; margin-top: 12px;" >
+            <div id="outerBox">
+                <div id="innerBox" style="justify-content: center; align-self: center; text-align:center;">
+                    <div id="okOne" style="padding: 3px; font-size: 20px; color: #54f3ff;">Thank you so much for watching. You really like </div>
+                    <button onclick="newPage()" style="padding: 8px; margin: 8px; border-radius: 12px;" >Laugh more</button>
+                
+                </div>
+            </div>
+
+
+               </div>
+        </div>
+
+        <div class="container" id="Cont" style="display: block;">
+            <div style="padding: 3px; font-size: 30px; color: #54f3ff; font-family: sans-serif;">MEME GOD</div>
+            <div style="padding: 3px; font-size: 20px; color: #54f3ff;" id="welcomeUser"></div>
+            <div style="padding: 3px; font-size: 20px; color: #54f3ff;">Let's put a smile on your face, within 5 memes.</div>
+            <div style="padding: 3px; font-size: 20px; color: #54f3ff;">Pick a category</div> 
+            <div id="counter" style="padding: 3px; font-size: 20px; color: #54f3ff;">1/5</div> 
+            
+            <div style="display: inline; padding: 3px;">
+                <button style="margin: 2px; display: inline;" onclick="clickCatOne()">Category 1</button>
+                <button style="margin: 2px; display: inline;" onclick="clickCatTwo()">Category 2</button>
+                <button style="margin: 2px; display: inline;" onclick="clickCatThree()">Category 3</button>
+            </div>
+            
+
+            <div style="
+            display: flex;
+            justify-content: center;
+            align-items: center; margin-top: 12px;" >
+            <div id="outerBox">
+                <div id="innerBox" style="justify-content: center; align-self: center; text-align:center;">
+                    <img src="" id="imageIdPlaceholder" />
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+        <script src="./public/assets/javascripts/feed.js" ></script>
+
+    </body>
+</html>
