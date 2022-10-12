@@ -18,23 +18,37 @@
     animation-delay: -6s;
 }
 
+/* title */
+.title{
+    color: #56a5eb;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+}
+
 /* BUTTONS */
 
-.optionBtn {
+.btn{
+    padding: 2rem;
     display: flex;
-    /* flex-direction: column; */
+    justify-content: space-between
+}
+
+.optionBtn {
+    color: white;
     font-size: 1.8rem;
     padding: 1rem 0;
-    width: 20rem;
+    width: 15rem;
     text-align: center;
     border: 0.1rem solid #56a5eb;
     margin-bottom: 1rem;
     text-decoration: none;
-    background-color: white;
+    background-color: #333;
 }
 
 .optionBtn:hover{
     cursor: pointer;
+    color: #54f3ff;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     transform: translateY(-0.1rem);
     transition: transform  150ms;
@@ -45,7 +59,8 @@
     box-shadow: none;
     transform: none;
 }
-=======
+/* Update Container Sizing */
+.container{
     width: 600px;
     height: 500px;
 }
