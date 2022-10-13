@@ -15,10 +15,9 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="./public/assets/stylesheets/reset.css" />
   <link rel="stylesheet" href="./public/assets/stylesheets/style.css" />
-
-  <link rel="stylesheet" href="script.js" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./public/assets/stylesheets/feed.css">
   <!-- This is the colour for the neon -->
   <link
     rel="stylesheet"
@@ -61,9 +60,6 @@
           </div>
         </div>
    
-
-
-
     <div class="container">
         <div class="ui">
             <div class="btn ">
@@ -76,6 +72,28 @@
 
         </div>
     </div>
+
+    <div class="bottom-ui">
+      <br>
+      <!-- Like & Dislike Buttons -->
+          <button class="likeBtn">
+      <a href="#" id="like"><img id="like-icon" src="./public/assets/images/like.svg" alt="thumbs up icon">
+      Like
+      </a> 
+          </button>
+      
+          <button class="dislikeBtn">
+      <a href="#" id="dislike"><img id="dislike-icon" src="./public/assets/images/dislike.svg" alt="thumbs down icon">
+      Dislike
+      </a> 
+          </button>
+      <!-- Like & Dislike Buttons end -->
+  </div>
+
+    
+<script src="./public/assets/javascripts/app.js"></script>
+<script src="./public/assets/javascripts/feed.js"></script>
 </body-1>
+
 </body>
 </html>

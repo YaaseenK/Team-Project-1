@@ -45,7 +45,7 @@
     box-shadow: none;
     transform: none;
 }
-=======
+.container {
     width: 600px;
     height: 500px;
 }
@@ -60,3 +60,86 @@
     height: 500px;
 }
 
+/* Like Button */
+
+
+.likeBtn {
+    width:290px;
+    height: 30px;
+    position: absolute;
+    margin-left: -300px;
+    background: none;
+    border: none;
+}
+
+#like {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding:2px 20px;
+    border-radius: 8px;
+    color: #07e8f4;
+    text-transform: uppercase;
+    Letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#like-icon {
+    display: flex;
+    width:35px;
+    margin-right: 10px;
+}
+
+#like:hover {
+    color: #61f8e4;
+    background: rgba(54, 90, 91, 0.5);
+    box-shadow: 0 0 5px #02fce7,  0 0 10px rgba(86, 185, 235, 0.5), 0 0 20px #04d4f4;
+}
+
+.likeBtn:active {
+    transform: translateY(4px);
+  }
+
+/* Dislike Button */
+.dislikeBtn {
+    width:290px;
+    height: 30px;
+    position: absolute;
+    margin-right: -200px;
+    background: none;
+    border: none;
+}
+
+#dislike {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding:2px 15px;
+    border-radius: 8px;
+    color: #07e8f4;
+    text-transform: uppercase;
+    Letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 23px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#dislike-icon {
+    display: flex;
+    width:35px;
+    margin-right: 10px;
+}
+
+#dislike:hover {
+    color: #61f8e4;
+    background: rgba(54, 90, 91, 0.5);
+    box-shadow: 0 0 5px #02fce7,  0 0 10px rgba(86, 185, 235, 0.5), 0 0 20px #04d4f4;
+}
+
+.dislikeBtn:active {
+    transform: translateY(4px);
+  }
