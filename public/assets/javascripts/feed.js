@@ -13,7 +13,7 @@ function getUserName() {
 
 
 function setUserName() {
-    var testUN = localStorage.setItem('username', 'Nani');
+    var testUN = localStorage.setItem('username', 'Mayank');
 
 }
 
@@ -35,12 +35,16 @@ function getImageFromTTAndShow() {
             setTimeout(() => {
                 document.getElementById('popupDialog').style.display = 'block';
                 document.getElementById('Cont').style.display = 'none';
-                document.getElementById('okOne').innerHTML += catSelected + '!';
+                document.getElementById('okOne').innerHTML = 'Thank you for watching '+  username  + '. You like category '+ catSelected + ' ! ';
         }, 1000);
         }
 }
 
 function newPage() {
+    window.open('./feed.html', '_self');
+
+}
+function newPage1() {
     window.open('./index.html', '_self');
 }
 
@@ -68,3 +72,4 @@ function clickCatThree() {
     tiktokImageUrl = 'https://www.rd.com/wp-content/uploads/2021/01/175BadJokes-19.jpg?fit=700,700';
     getImageFromTTAndShow();
 }
+
