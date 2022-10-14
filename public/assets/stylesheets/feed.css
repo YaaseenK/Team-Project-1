@@ -1,40 +1,105 @@
-.container {
-    width: 580px;
-    height: 480px;
+
+body {
+    text-align: center;
+    align-items: center;
+    background: #23242a;
+    position: relative;
 }
 
-.container::before {
-    width: 580px;
-    height: 480px;
-    animation: animate 12s linear infinite;
-    transform-origin: bottom right;
+body .container {
+    margin: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    position: relative;
 }
 
-.container::after{
+#outerBox{
+    position: relative;
     width: 580px;
     height: 480px;
-    animation: animate 12s linear infinite;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#outerBox::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 580px;
+    height: 480px;
+    background: linear-gradient(0deg,transparent, #54f3ff, #54f3ff);
     transform-origin: bottom right;
-    animation-delay: -6s;
+    animation: animate 6s linear infinite;
+}
+
+#outerBox::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 580px;
+    height: 480px;
+    background: linear-gradient(0deg,transparent, #54f3ff, #54f3ff);
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -3s;
+}
+
+#innerBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    inset: 2px;
+    border-radius: 8px;
+    background: #28292d;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* title */
+.title{
+    color: #56a5eb;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
 }
 
 /* BUTTONS */
 
-.optionBtn {
+.btn{
+    padding: 2rem;
     display: flex;
-    /* flex-direction: column; */
+    justify-content: space-between
+}
+
+.optionBtn {
+    border-radius: 25px;
+    color: white;
     font-size: 1.8rem;
     padding: 1rem 0;
-    width: 20rem;
+    width: 15rem;
     text-align: center;
     border: 0.1rem solid #56a5eb;
     margin-bottom: 1rem;
     text-decoration: none;
-    background-color: white;
+    background-color: #333;
 }
 
 .optionBtn:hover{
     cursor: pointer;
+    color: #54f3ff;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     transform: translateY(-0.1rem);
     transition: transform  150ms;
@@ -45,7 +110,7 @@
     box-shadow: none;
     transform: none;
 }
-.container {
+.container{
     width: 600px;
     height: 500px;
 }
@@ -60,8 +125,6 @@
     height: 500px;
 }
 
-/* Like Button */
-
 
 .likeBtn {
     width:290px;
@@ -71,6 +134,20 @@
     background: none;
     border: none;
 }
+
+
+.likeBtn {
+    width:290px;
+    background: none;
+    border: none;
+}
+
+
+.bottom-ui{
+    display: flex;
+    justify-content: space-around;
+}
+
 
 #like {
     position: relative;
@@ -86,12 +163,12 @@
     overflow: hidden;
     transition: 0.2s;
 }
-
 #like-icon {
     display: flex;
     width:35px;
     margin-right: 10px;
 }
+
 
 #like:hover {
     color: #61f8e4;
@@ -113,6 +190,7 @@
     border: none;
 }
 
+
 #dislike {
     position: relative;
     display: inline-flex;
@@ -127,12 +205,12 @@
     overflow: hidden;
     transition: 0.2s;
 }
-
 #dislike-icon {
     display: flex;
     width:35px;
     margin-right: 10px;
 }
+
 
 #dislike:hover {
     color: #61f8e4;
@@ -143,3 +221,4 @@
 .dislikeBtn:active {
     transform: translateY(4px);
   }
+ 
