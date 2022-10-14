@@ -1,18 +1,3 @@
-let like = localStorage.getItem("totalLike");
-let dislike = localStorage.getItem("totalDislike");
-
-document.getElementById("like").onclick = function() {
-    like ++;
-    console.log(like);
-    localStorage.setItem("totalLike", like);
-}
-
-document.getElementById("dislike").onclick = function() {
-    dislike ++;
-    console.log(dislike);
-    localStorage.setItem("totalDislike", dislike);
-}
-
 var username = 'oh boi';
 
 function getUserName() {
@@ -87,4 +72,3 @@ function clickCatThree() {
     tiktokImageUrl = 'https://www.rd.com/wp-content/uploads/2021/01/175BadJokes-19.jpg?fit=700,700';
     getImageFromTTAndShow();
 }
-
