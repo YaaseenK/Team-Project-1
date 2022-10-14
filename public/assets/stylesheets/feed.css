@@ -1,3 +1,4 @@
+
 body {
     text-align: center;
     align-items: center;
@@ -67,4 +68,135 @@ body .container {
     flex-direction: column;
 }
 
+/* title */
+.title{
+    color: #56a5eb;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+}
 
+/* BUTTONS */
+
+.btn{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.optionBtn {
+    border-radius: 25px;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 15rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background-color: #333;
+}
+
+.optionBtn:hover{
+    cursor: pointer;
+    color: #54f3ff;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform  150ms;
+}
+
+.optionBtn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Update Container Sizing */
+.container{
+    width: 600px;
+    height: 500px;
+}
+
+.container::before {
+    width: 600px;
+    height: 500px;
+}
+
+.container::after{
+    width: 600px;
+    height: 500px;
+}
+
+.bottom-ui{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Author: Heidi Chan */
+/* LIKE && DISLIKE BUTTONS */
+
+.likeBtn {
+    width:290px;
+    background: none;
+    border: none;
+}
+#like {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding:2px 20px;
+    border-radius: 8px;
+    color: #07E8F4;
+    text-transform: uppercase;
+    Letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#like-icon {
+    display: flex;
+    width:35px;
+    margin-right: 10px;
+}
+#like:hover {
+    color: #61F8E4;
+    background: rgba(54, 90, 91, 0.5);
+    box-shadow: 0 0 5px #02FCE7,  0 0 10px rgba(86, 185, 235, 0.5), 0 0 20px #04D4F4;
+}
+.likeBtn:active {
+    transform: translateY(4px);
+}
+/* Dislike Button */
+.dislikeBtn {
+    width:290px;
+    background: none;
+    border: none;
+} 
+#dislike {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding:2px 15px;
+    border-radius: 8px;
+    color: #07E8F4;
+    text-transform: uppercase;
+    Letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 23px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#dislike-icon {
+    display: flex;
+    width:35px;
+    margin-right: 10px;
+}
+#dislike:hover {
+    color: #61F8E4;
+    background: rgba(54, 90, 91, 0.5);
+    box-shadow: 0 0 5px #02FCE7,  0 0 10px rgba(86, 185, 235, 0.5), 0 0 20px #04D4F4;
+}
+.dislikeBtn:active {
+    transform: translateY(4px);
+} 
