@@ -1,72 +1,6 @@
-/* HEADER NEON TEXT, GREETING TEXT AND BUTTONS FOUND HERE */
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-/* THIS IS THE FONT FAMILY AND SIZE AND COLOUR FOR THE NEON MEME GOD*/
-body, .font-effect-neon, .container-z {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(4, 4, 4, 0.0);
-    font-family: Lato, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 8em;
-    
-}
-
-
-/* Dont know why the button height changed???? it should be rectangle */
-/* if we lose the spacing becuase of an error you can use this code justify-content: space-evenly */
-.button {
-
-    display: flex;
-    flex-wrap: wrap;
-    height: 35px;
-  width: 1200px;
-  text-align: center;
-  justify-content: center;
-  gap: 3%;
-
-}
-
-  /* made the background opacity for greetings 0 so it is fully opaque so you can see the glare of meme god */
-.header, .greeting, .container-z  {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial, sans-serif';
-    
-    color: rgb(0, 179, 255);
-    text-align: center;
-    background: rgba(4, 4, 4, 0.0); 
-
-
-}
-
-
-
-/* can use display:inline block to make text square */
-.greeting, .container-z {
-
-    width: 500px;
-    font-size: 10px;
-    text-align: center;
-    justify-content: space-evenly;
-
-
-}
-
-
-
-
-
-
-
-
+/* <!-- Coded By: Yaaseen Khan --> */
 :root {
-    background-color: #ecf5dd;
+    background-color: #333;
     font-size: 62.5%;
 }
 
@@ -78,13 +12,17 @@ body, .font-effect-neon, .container-z {
     font-size: medium;
 }
 
-body {
+body{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #23242a;
+}
+
+.top-ui{
+    display: flex;
+    justify-content: center;
 }
 
 .container{
@@ -226,7 +164,15 @@ input[type="submit"]{
     font-weight: 600;
     cursor: pointer;
 }
+
 input[type="submit"]{
     opacity: 0.8;
 }
-/* ADDING SPACING TO THE TAGS */
+
+/* <!-- Coded By: Glen Bastien --> */
+.header .container-z .font-effect-neon {
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 6.4rem;
+    padding: 20px;
+    text-align: center;
+}
