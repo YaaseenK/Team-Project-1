@@ -1,5 +1,3 @@
-
-
 //Loop through Array of Objects
 var objPeople = [
     {
