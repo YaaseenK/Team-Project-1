@@ -1,3 +1,5 @@
+let hideClass = document.getElementById('alert-container');
+
 //Loop through Array of Objects
 var objPeople = [
     {
@@ -37,8 +39,14 @@ function getInfo() {
         } 
     }
     
-    if ( !ismatchFaund )
-    alert("Username or Password incorrect");
+    if ( !ismatchFaund ){
+        hideClass.classList.remove('hidden');
+        $("#alert-text").text("Username or Password incorrect");
+        setTimeout(() => {
+            hideClass.classList.add('hidden');
+        }, 5000);
+
+    }
     
 }
 
