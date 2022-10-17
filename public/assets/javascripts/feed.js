@@ -10,6 +10,7 @@
         false: false
     } 
     const clickOneBool = '';
+    
     // initialize getInfofuntion
     getInfo();
     // get username from local storage && create welcome message
