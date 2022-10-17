@@ -1,5 +1,5 @@
 let hideClass = document.getElementById('alert-container');
-
+//Coded By: Serhiy Zvedenyuk
 //Loop through Array of Objects
 var objPeople = [
     {
