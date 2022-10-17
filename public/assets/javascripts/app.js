@@ -1,5 +1,5 @@
-
-
+let hideClass = document.getElementById('alert-container');
+//Coded By: Serhiy Zvedenyuk
 //Loop through Array of Objects
 var objPeople = [
     {
@@ -15,8 +15,8 @@ var objPeople = [
         password: "Gleng99"
     },
     {
-        username: "Yaaseen",
-        password: "Yaaseeny99"
+        username: "Yaaseen_",
+        password: "Yaaseen99"
     },
     {
         username: "Serhiy",
@@ -24,23 +24,32 @@ var objPeople = [
     },
 ]
 
-function getInfo() {
+
+function getInfo(capitalizeFirstLetter) {
     var username = document.getElementById('username').value;
+    const capitalizedUser = username.charAt(0).toUpperCase() + username.slice(1);
+
     var password = document.getElementById('password').value;
     var ismatchFaund = false;
 
 
     for (var i = 0; i < objPeople.length; i++) {
-        //check is user input matches usernames and passwords of a current index of the objPeople array
-        if(username == objPeople[i].username && password == objPeople[i].password) { 
+        //check if user input matches usernames and passwords of a current index of the objPeople array
+        if(capitalizedUser == objPeople[i].username && password == objPeople[i].password) { 
             ismatchFaund = true;
-            window.open("./feed.html", "_self") /*opens the target page while username & password matches*/
-            localStorage.setItem('username', username);
+            window.open("./page/feed.html", "_self") /*opens the target page while username & password matches*/
+            localStorage.setItem('username', capitalizedUser);
         } 
     }
-    
-    if ( !ismatchFaund )
-    alert("Username or Password incorrect");
+
+    if ( !ismatchFaund ){
+        hideClass.classList.remove('hidden');
+        $("#alert-text").text("Username or Password incorrect");
+        setTimeout(() => {
+            hideClass.classList.add('hidden');
+        }, 5000);
+
+    }
     
 }
 

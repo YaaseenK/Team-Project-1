@@ -1,3 +1,10 @@
+.welcome-container{
+    padding: 3px; font-size: 20px; color: #54f3ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .container {
     margin-bottom: 2.5rem;
     width: 580px;
@@ -38,9 +45,9 @@
 .optionBtn {
     border-radius: 25px;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding: 1rem 0;
-    width: 15rem;
+    width: 10rem;
     text-align: center;
     border: 0.1rem solid #56a5eb;
     margin-bottom: 1rem;
@@ -81,6 +88,7 @@
 .bottom-ui{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 4rem;
 }
 
 /* Author: Heidi Chan */
@@ -150,4 +158,4 @@
 }
 .dislikeBtn:active {
     transform: translateY(4px);
-  } 
+} 
