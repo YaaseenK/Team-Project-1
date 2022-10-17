@@ -5,7 +5,11 @@
     let index=0;
     let img = document.querySelector('img');
     let memes;
-
+    const clickOne ={
+        true: true,
+        false: false
+    } 
+    const clickOneBool = '';
     // initialize getInfofuntion
     getInfo();
     // get username from local storage && create welcome message
@@ -32,7 +36,7 @@
     }
 
     // RELATABLE BUTTON ONCLICK FUNCTION!
-    clickCatOne = () => {
+    clickCatOne = () => {        
     // initialize display displayIMG function
         displayImg();
     // +1 to counter each time it is clicked 

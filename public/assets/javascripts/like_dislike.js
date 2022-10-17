@@ -20,7 +20,7 @@ like.click(()=> {
     reposteMemes.push(repostLink);
     console.log(reposteMemes)
     localStorage.setItem('reposteMemes' , JSON.stringify(reposteMemes))
-    clickCatOne();
+    console.log(clickOneBool)
 });
 
 
