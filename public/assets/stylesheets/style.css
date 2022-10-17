@@ -1,6 +1,14 @@
-/* <!-- Coded By: Yaaseen Khan --> */
+/* <!-- Author: Yaaseen Khan --> */
+html {
+  --red: #a24e34;
+  --green: #01f3e6;
+  --yellow: #f0e765;
+  --bgColor: #23242a;
+  --text: #54f3ff;
+  --form-bg-color: #28292d;
+}
 :root {
-    background-color: #333;
+    background-color: var(--bgColor);;
     font-size: 62.5%;
 }
 
@@ -15,11 +23,11 @@
 body{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     min-height: 100vh;
-    background: #23242a;
+    background: var(--bgColor);
 }
-
 .top-ui{
     display: flex;
     justify-content: center;
@@ -41,7 +49,7 @@ body{
     left: -50%;
     width: 380px;
     height: 480px;
-    background: linear-gradient(0deg,transparent, #54f3ff, #54f3ff);
+    background: linear-gradient(0deg,transparent, var(--text), var(--text));
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
 }
@@ -53,7 +61,7 @@ body{
     left: -50%;
     width: 380px;
     height: 480px;
-    background: linear-gradient(0deg,transparent, #54f3ff, #54f3ff);
+    background: linear-gradient(0deg,transparent, var(--text), var(--text));
     animation: animate 6s linear infinite;
     transform-origin: bottom right;
     animation-delay: -3s;
@@ -72,7 +80,7 @@ body{
     position: absolute;
     inset: 2px;
     border-radius: 8px;
-    background: #28292d;
+    background: var(--form-bg-color);
     z-index: 10;
     padding: 50px 40px;
     display: flex;
@@ -179,7 +187,7 @@ input[type="submit"]{
 .alert-text{
     margin-left: 10px;
     font-weight: 600;
-    color: #008000
+    color: #45f3ff
 }
 
 .hidden{
@@ -190,7 +198,7 @@ input[type="submit"]{
 .header .container-z .font-effect-neon {
     font-family: Lato, Helvetica, sans-serif;
     color: #45f3ff;
-    font-size: 6.4rem;
+    font-size: 8.4rem;
     padding: 20px;
     text-align: center;
 }

@@ -1,0 +1,107 @@
+html {
+    --red: #a24e34;
+    --green: #01f3e6;
+    --yellow: #f0e765;
+    --bgColor: #23242a;
+    --text: #54f3ff;
+    --form-bg-color: #28292d;
+    --typewriterSpeed: 2.5s;
+    --characters: 10;
+    --charactersTwo: 31;
+}
+
+.loading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1, h2{
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    width: max-content;
+}
+
+h1, h2, h3{
+    color:  #02FCE7;
+    
+}
+
+h1{
+    font-size: 4.4rem;
+    
+}
+
+h1::before,
+h1::after,
+h2::before,
+h2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+h1:before{
+    background: var(--form-bg-color);
+    animation:
+        typewriter var(--typewriterSpeed) steps(var(--characters)) 1s forwards;
+}
+
+h1:after{
+    width: .125em;
+    background-color: var(--green);
+    animation: typewriter var(--typewriterSpeed) steps(var(--characters)) 1s forwards,
+        blink 750ms steps(11) infinite;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h2::before{
+    background: var(--form-bg-color);
+    animation:
+        typewriter var(--typewriterSpeed) steps(var(--charactersTwo)) 3.5s forwards;
+}
+
+h2::after{
+    width: .125em;
+    background-color: var(--green);
+    animation: typewriter var(--typewriterSpeed) steps(var(--charactersTwo)) 3.5s forwards,
+        blink 750ms steps(var(--charactersTwo)) infinite;
+}
+
+.subtitle{
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 
+    calc(var(--typewriterSpeed) + 3.5s) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%
+        
+    }
+}
+
+@keyframes blink {
+    to{
+        background: transparent;
+    }
+    
+}
+
+@keyframes fadeInUp {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}

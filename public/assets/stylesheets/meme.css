@@ -1,0 +1,22 @@
+.inner-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 517px;
+    height: 400px;
+}
+
+.memeImg{
+    width: 517px;
+    height: 400px;
+    border: .3rem solid #02FCE7;
+    border-radius: 20px;
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+    color: #54f3ff;
+    font-size: 1.4rem;
+}
+

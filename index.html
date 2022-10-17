@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- style sheets -->
-    <link rel="stylesheet" href="./public/assets/stylesheets/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/assets/stylesheets/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./public/assets/stylesheets/style.css">
+    <link rel="stylesheet" href="../public/assets/stylesheets/style.css">
     
 
     <!-- This is the colour for the neon -->
@@ -19,8 +21,31 @@
 </head>
 <body>
     <!-- Coded By: Yaaseen Khan -->
-    <div class="main">
 
+    <div class="main">
+        <header>
+            <nav class="navbar navbar-expand-lf bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">MemeGodz</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./page/feed.html">Feed</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./page/profile.html"> Profile</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"> signUp</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
 
     <div class="top-ui">
         <!-- Coded By: Glen Bastien -->
@@ -62,7 +87,7 @@
     </div>
 
     <!-- script -->
-    <script src="./public/assets/javascripts/app.js"></script>
+    <script src="../public/assets/javascripts/app.js"></script>
     <!-- Added link to the jQuery library -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- JavaScript Bundle with Popper -->
