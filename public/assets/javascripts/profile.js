@@ -5,9 +5,10 @@ $(`#profile-real-name`).text(username);
 let postCount = $(`#post-count`);
 let gallery = $(`#gallery`);
 let postURLs =  JSON.parse(localStorage.getItem("reposteMemes")) || [];
+
 let repostLink = postURLs.repostURL
 
-function rand(min, max ) {
+function rand(min, max) {
     let randomNum = Math.random() * (max - min) + min;
     return(Math.floor(randomNum));
 }

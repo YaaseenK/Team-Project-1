@@ -5,12 +5,8 @@
     let index=0;
     let img = document.querySelector('img');
     let memes;
-    const clickOne ={
-        true: true,
-        false: false
-    } 
-    const clickOneBool = '';
     
+
     // initialize getInfofuntion
     getInfo();
     // get username from local storage && create welcome message
@@ -37,7 +33,11 @@
     }
 
     // RELATABLE BUTTON ONCLICK FUNCTION!
-    clickCatOne = () => {        
+    clickCatOne = () => {    
+        var clickOne = true;
+        console.log(clickOne);
+        localStorage.setItem('currentCat', clickOne);
+        
     // initialize display displayIMG function
         displayImg();
     // +1 to counter each time it is clicked 
@@ -79,20 +79,25 @@
             index = index < memes.length ? ++index : console.log('Thats all');
     }
 
-    const generateMemeBtn = document.querySelector(".meme-generator .gen-btn");
-    const memeImg = document.querySelector(".meme-generator img");
-    const memeTitle = document.querySelector(".meme-generator .meme-title");
-    const author = document.querySelector("meme-generator .author");
+    // const generateMemeBtn = document.querySelector(".meme-generator .gen-btn");
+    // const memeImg = document.querySelector(".meme-generator img");
+    // const memeTitle = document.querySelector(".meme-generator .meme-title");
+    // const author = document.querySelector("meme-generator .author");
     
     const updateDetails = (url, title, author)  => {
         img.setAttribute("src", url);
-        memeTitle.innerHTML = title;
-        memeAuthor.innerHTML =`Meme by: ${author}`;
+        // memeTitle.innerHTML = title;
+        // memeAuthor.innerHTML =`Meme by: ${author}`;
     }
     
     clickCatTwo = () =>{
+        
         // initialize display displayIMG function
             displayImg();
+            var cat = false;
+            console.log(cat, 'in the cat two function')
+            localStorage.setItem('currentCat', cat);
+
         // +1 to counter each time it is clicked 
             counter++;
         // initialize updateCounter function with counter callback
@@ -105,7 +110,8 @@
         .then((data) => {
             console.log(data.title)
             updateDetails(data.url, data.title, data.author)
-            .catch(err => console.error(err));
+            localStorage.setItem('currentMeme' ,data.url)
+            // .catch(err => console.error(err));
         });
 }
 
