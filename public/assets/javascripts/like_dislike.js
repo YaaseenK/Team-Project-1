@@ -9,7 +9,6 @@ const reposteMemes = JSON.parse(localStorage.getItem('reposteMemes')) || [];
 
 
 
-
 like.click(()=> {     
     let likedURL = localStorage.getItem('currentMeme');
     repostLink = {
@@ -20,7 +19,7 @@ like.click(()=> {
     reposteMemes.push(repostLink);
     console.log(reposteMemes)
     localStorage.setItem('reposteMemes' , JSON.stringify(reposteMemes))
-    clickCatOne();
+    clickCatOne()
 });
 
 
