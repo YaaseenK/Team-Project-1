@@ -42,4 +42,9 @@ Please refer to the LICENSE in the repo.
 ![Main page with memes](/public/assets/images/Main%20page%20with%20meme.jpg)
 ![Profile page with liked memes](/public/assets/images/Profile%20page%20with%20liked%20meme.jpg)
 
+## Links
+
+Life Application: https://yaaseenk.github.io/Team-Project-1/
+GitHub: https://yaaseenk.github.io/Team-Project-1/
+
 
