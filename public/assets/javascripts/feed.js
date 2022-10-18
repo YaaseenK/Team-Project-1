@@ -8,6 +8,7 @@
 
     // initialize getInfofuntion
     getInfo();
+
     // get username from local storage && create welcome message
     function getInfo(){
         let userName = localStorage.getItem('username');
@@ -18,24 +19,28 @@
     // function to updated the counter
     // takes in one num parameter holding counter value
     function updateCounter(currentcounter){
+
     // setting number callback to counter variable
         let counter = currentcounter;
+
     // places counter val to DOM
         counterText.text(counter);
     }
-
     function displayImg(){
         // add hidden class to loading animation
         introAnimation.addClass('hidden');
-        // Removes hidden class list from img 
+        // Removes hidden class list from img
         img.classList.remove('hidden');
     }
 
     // RELATABLE BUTTON ONCLICK FUNCTION!
     clickCatOne = () => {
+        var clickOne = true;
+        console.log(clickOne);
+        localStorage.setItem('currentCat', clickOne);
     // initialize display displayIMG function
         displayImg();
-    // +1 to counter each time it is clicked 
+    // +1 to counter each time it is clicked
         counter++;
     // initialize updateCounter function with counter callback
         updateCounter(counter);
@@ -51,15 +56,16 @@
             link : post.data.url,
             title : post.data.title
     })))
-    //  calls render function provides res object created above 
-    // used to render view and sends the rendered HTML string to the client. 
+
+    //  calls render function provides res object created above
+    // used to render view and sends the rendered HTML string to the client.
         .then(res => render(res))
         .catch(err => console.error(err));
         }
-        
-    // function is passed one argument 
+
+    // function is passed one argument
     function render(res){
-        // asign the array to memes variable 
+        // asign the array to memes variable
             let memes = res
         // if index is less than array length
         if(index < memes.length){
@@ -74,21 +80,23 @@
             index = index < memes.length ? ++index : console.log('Thats all');
     }
 
-    const generateMemeBtn = document.querySelector(".meme-generator .gen-btn");
-    const memeImg = document.querySelector(".meme-generator img");
-    const memeTitle = document.querySelector(".meme-generator .meme-title");
-    const author = document.querySelector("meme-generator .author");
-    
+    // const generateMemeBtn = document.querySelector(".meme-generator .gen-btn");
+    // const memeImg = document.querySelector(".meme-generator img");
+    // const memeTitle = document.querySelector(".meme-generator .meme-title");
+    // const author = document.querySelector("meme-generator .author");
     const updateDetails = (url, title, author)  => {
         img.setAttribute("src", url);
-        memeTitle.innerHTML = title;
-        memeAuthor.innerHTML =`Meme by: ${author}`;
+        // memeTitle.innerHTML = title;
+        // memeAuthor.innerHTML =`Meme by: ${author}`;
     }
     
     clickCatTwo = () =>{
         // initialize display displayIMG function
             displayImg();
-        // +1 to counter each time it is clicked 
+            var cat = false;
+            console.log(cat, 'in the cat two function')
+            localStorage.setItem('currentCat', cat);
+        // +1 to counter each time it is clicked
             counter++;
         // initialize updateCounter function with counter callback
             updateCounter(counter);
@@ -96,14 +104,13 @@
         fetch("https://meme-api.herokuapp.com/gimme/wholesomememes")
         // Sends a JSON response composed of api data
         .then((response) => response.json())
-
         .then((data) => {
             console.log(data.title)
             updateDetails(data.url, data.title, data.author)
-            .catch(err => console.error(err));
+            localStorage.setItem('currentMeme' ,data.url)
+            // .catch(err => console.error(err));
         });
 }
-
     clickCatThree = () => {
         window.open("./profile.html", "_self")
     }
