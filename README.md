@@ -45,6 +45,6 @@ Please refer to the LICENSE in the repo.
 ## Links
 
 Life Application: https://yaaseenk.github.io/Team-Project-1/
-GitHub: https://yaaseenk.github.io/Team-Project-1/
+GitHub: https://github.com/YaaseenK/Team-Project-1
 
 
